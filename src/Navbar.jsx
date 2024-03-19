@@ -31,6 +31,7 @@ function Navbar({ cart, setcart }) {
                   About
                 </a>
               </li>
+              
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -38,7 +39,7 @@ function Navbar({ cart, setcart }) {
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="true"
                 >
                   Shop
                 </a>
@@ -64,6 +65,7 @@ function Navbar({ cart, setcart }) {
                 </ul>
               </li>
             </ul>
+
             <form className="d-flex">
               <button
                 className="btn btn-outline-dark"
