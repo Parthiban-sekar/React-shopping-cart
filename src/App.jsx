@@ -85,11 +85,6 @@ function App() {
 
 const  [cart,setCart] = useState(0)
 
-
-
-
-
-
   return(
     <div className='container-fluid'>
       <div className="row">
@@ -107,8 +102,8 @@ const  [cart,setCart] = useState(0)
     <div className="container px-4 px-lg-5 mt-5">
       <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
         {
-          products.map((element)=>{
-              return <Card element={element} cart={cart} setCart={setCart}  />
+          products.map((element,i)=>{
+              return <Card element={element} cart={cart} setCart={setCart} key={i} />
           })
         }
       </div>
